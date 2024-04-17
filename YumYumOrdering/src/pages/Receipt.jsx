@@ -8,7 +8,6 @@ export default function Receipt(){
     <div className="orderScreen" style={{ backgroundColor: "#605858" }}>
       <Header></Header>
       <ReceiptComp></ReceiptComp>
-
       <Button label="GÖR EN NY BESTÄLLNING" backgroundColor="#353131" page="/" ></Button>
       </div>
   )

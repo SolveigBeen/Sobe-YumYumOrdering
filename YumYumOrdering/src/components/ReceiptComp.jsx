@@ -8,16 +8,16 @@ const dishes=[
   {title:'GUACAMOLE', price:"19 SEK", number:"1"},
 ]
 
-function MenuItem () {
+export default function ReceiptComp () {
   return (
     <div className="order-receipt">
       <div className="order-receipt__header">
-      <div className="Logo Logo--red">
-      <div>Y</div> 
-      <div>Y</div>
-      <div>G</div>
-      <div>S</div>
-    </div>
+        <div className="Logo Logo--red">
+          <div>Y</div> 
+          <div>Y</div>
+          <div>G</div>
+          <div>S</div>
+        </div>
         <h2>KVITTO</h2>
         <h4>#4KJWSDF234K</h4>
       </div>
@@ -30,8 +30,7 @@ function MenuItem () {
       </div>
       <div className="order-receipt__number">
             <p style={{ color:"#353131" }}>{dish.number} stycken</p>
-            </div>
-           
+      </div>  
     </div>
     ))}
    
@@ -40,11 +39,3 @@ function MenuItem () {
   )
 }
 
-export default function ReceiptComp() {
-  return (
-    <div className="receipt__order">
-      <MenuItem></MenuItem>
-    
-    </div>
-  )
-}
