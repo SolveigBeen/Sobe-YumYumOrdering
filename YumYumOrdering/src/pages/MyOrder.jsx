@@ -14,7 +14,7 @@ function MyOrder(){
       <OrderList onTotalSumChange={setTotalSum} ></OrderList>
     <div>
       <TotalSum total={totalSum}></TotalSum>
-      <Button label="TAKE MY MONEY" backgroundColor="#353131"  page="/"></Button>
+      <Button label="TAKE MY MONEY" backgroundColor="#353131"  page="/OrderDone"></Button>
       </div>
       
     </div>

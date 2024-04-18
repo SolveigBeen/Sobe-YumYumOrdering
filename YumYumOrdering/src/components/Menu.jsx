@@ -1,10 +1,10 @@
 
 const dishes=[
-  {title:'Karlstad', price:"27 SEK", number:"3"},
-  {title:'HO CHI MINH', price:"18 SEK", number:"2"},
-  {title:'KINGSTON', price:"18 SEK", number:"2"},
-  {title:'SWEET CHILI DIP', price:"19 SEK", number:"1"},
-  {title:'GUACAMOLE', price:"19 SEK", number:"1"},
+  {title:'Karlstad', price:"9 SEK", ingred:"kantarell, sharlottenlök, morot, persilja"},
+  {title:'HO CHI MINH', price:"9 SEK", ingred:"kantarell, sharlottenlök, morot, persilja"},
+  {title:'KINGSTON', price:"9 SEK", ingred:"kantarell, sharlottenlök, morot, persilja"},
+  {title:'SWEET CHILI DIP', price:"9 SEK", ingred:"kantarell, sharlottenlök, morot, persilja"},
+  {title:'GUACAMOLE', price:"9 SEK", ingred:"kantarell, sharlottenlök, morot, persilja"},
 ]
 
 const summa = 101;
@@ -14,16 +14,14 @@ function MenuItem () {
     <div>
       {dishes.map((dish, index)=> (
     <div key={index} className="MenuItem">
-      <div className="DishItem">
+      <div className="DishItem MenuItem-style">
         <h3>{dish.title}</h3>
         <div className="DottedLine"></div> {/* Dotted line */}
         <h3>{dish.price}</h3>
       </div>
-      <div className="orderNumber">
-      <img src="plus-button.png" alt="cart" className="plus" style={{ width:"24px", height:"24px" }}></img>
-      <p style={{ color:"#353131" }}>{dish.number} stycken</p>
-      <img src="minus-button.png" alt="cart" className="minus" style={{ width:"24px", height:"24px" }}></img>
-      </div>
+      <div className="menu-ingred">
+            <p >{dish.ingred} stycken</p>
+           </div>
     </div>
     ))}
     </div>
@@ -33,6 +31,7 @@ function MenuItem () {
 export default function Menu({summa}) {
   return (
     <div className="menu">
+      <h2>MENY</h2>
       <MenuItem></MenuItem>
     </div>
   )

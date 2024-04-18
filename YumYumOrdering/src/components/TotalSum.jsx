@@ -1,5 +1,8 @@
 
+
+
 export default function TotalSum({ total }){
+
   return (
     <div className="total-container" >
       <div class="totalt-placeholder">
